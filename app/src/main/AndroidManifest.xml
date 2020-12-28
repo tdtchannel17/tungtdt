@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ddona.newspaperapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/newspaper"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/newspaper"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewspaperApplication">
+        <activity
+            android:name=".NewspaperActivity"
+            android:label="@string/title_activity_newspaper"
+            android:theme="@style/Theme.NewspaperApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

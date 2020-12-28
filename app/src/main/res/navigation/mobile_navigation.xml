@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_genk">
+
+    <fragment
+        android:id="@+id/nav_genk"
+        android:name="com.ddona.newspaperapplication.ui.genk.GenkFragment"
+        android:label="@string/genk"
+        tools:layout="@layout/fragment_pager">
+
+        <action
+            android:id="@+id/nav_genk_to_detail"
+            app:destination="@id/nav_detail_genk"
+            app:enterAnim="@anim/open_open"
+            app:exitAnim="@anim/open_close"
+            app:popEnterAnim="@anim/close_open"
+            app:popExitAnim="@anim/close_close" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tieudungplus"
+        android:name="com.ddona.newspaperapplication.ui.tieudungplus.TieuDungFragment"
+        android:label="@string/tieudungplus"
+        tools:layout="@layout/fragment_pager">
+
+        <action
+            android:id="@+id/nav_tieudungplus_to_detail"
+            app:destination="@id/nav_detail_tieudung"
+            app:enterAnim="@anim/open_open"
+            app:exitAnim="@anim/open_close"
+            app:popEnterAnim="@anim/close_open"
+            app:popExitAnim="@anim/close_close" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail_genk"
+        android:name="com.ddona.newspaperapplication.ui.genk.DetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_detail" />
+
+    <fragment
+        android:id="@+id/nav_detail_tieudung"
+        android:name="com.ddona.newspaperapplication.ui.tieudungplus.DetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>

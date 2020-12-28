@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Báo mới mỗi ngày</string>
+    <string name="title_activity_newspaper">Báo mới mỗi ngày</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="news_paper">Newspaper</string>
+
+    <string name="genk">Genk</string>
+    <string name="tieudungplus">Tiêu dùng plus</string>
+    <string name="detail">Chi tiết tin tức</string>
+</resources>
